@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.header {
+    padding-top: 2rem;
+    background-image: url(../img/banner.jpg);
+    height: 75rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Conforme la pantalla disminulla de tamaño la imagen se centrar desde el origen XY */
+
+}
+
+.header__texto {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .header__texto {
+        height: 50%;
+        margin: 0 6rem;
+    }
+}
+
+.header__parrafo {
+    font-size: 1.8rem;
+}
+
+.barra a {
+    color: var(--blanco);
+
+}
+
+.barra a:hover {
+    color: rgb(189, 189, 120);
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo__bold {
+    font-weight: bold;
+}
+
+.logo__nombre {
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+
+    }
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+
+}
+
+
+
+@media (min-width:768px) {
+
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .entrada__imagen img {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+
+
+
+.entrada {
+    border-bottom: 1px solid gray;
+    margin-bottom: 3rem;
+}
+
+.entrada__contenido {
+    margin-bottom: 3rem;
+}
+
+.entrada__contenido h4 {
+    margin-top: 1rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+}
+
+.boton {
+    border-radius: 3px;
+    padding: 1rem 3rem;
+    color: white;
+    font-family: var(--fuenteHeading);
+    font-size: 1.9rem;
+}
+
+.boton--primario {
+    background-color: rgb(224, 169, 97);
+}
+
+.boton--primario:hover {
+    color: rgb(224, 169, 97);
+    border: 1.5px solid rgb(224, 169, 97);
+    background-color: transparent;
+}
+
+
+.boton--secundario {
+    background-color: rgb(212, 135, 34);
+}
+
+.boton--secundario:hover {
+    color: rgb(212, 135, 34);
+    border: 1.5px solid rgb(212, 135, 34);
+    background-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+    .boton {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.widget{
+    border-bottom: 1px solid grey;
+    padding-bottom: 2rem;
+}
