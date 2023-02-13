@@ -156,3 +156,36 @@ body {
     border-bottom: 1px solid grey;
     padding-bottom: 2rem;
 }
+
+/* Sobre nosotros */
+
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+    }
+    .sobre-nosotros__imagen, .sobre-nosotros__texto{
+        flex-basis:calc(50% - 1rem);
+    }
+    .sobre-nosotros__texto{
+        text-align: justify;
+    }
+}
+
+.footer{
+    background-color: var(--negro);
+    width: 100%;
+    min-height: 20vh;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+
+@media (min-width: 768px) {
+    .footer{
+        flex-direction: row;
+    }
+}
